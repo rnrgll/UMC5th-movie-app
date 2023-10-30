@@ -1,6 +1,6 @@
 import Movie from "./components/Movie";
 import { movies } from "./movie.Dummy";
-
+import React, { useState, useEffect } from "react";
 
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
                   title = {item.title}
                   poster_path = {item.poster_path}
                   vote_average = {item.vote_average}
+                  overview={item.overview}
                 />
               );
           })
