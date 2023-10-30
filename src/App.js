@@ -1,4 +1,4 @@
-import Movie from "./components/Movie";
+import Movie from "./components/Movie/Movie";
 import { movies } from "./movie.Dummy";
 import React, { useState, useEffect } from "react";
 
