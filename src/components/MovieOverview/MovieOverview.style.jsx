@@ -13,7 +13,7 @@ export const MovieOverview = styled.div`
   height: 100%;
   overflow: auto;
   font-size: 13px;
-  display: ${(props) => (props.hide ? "none" : "block")};
+  display: ${props => (props.hide ? 'none' : 'block')};
 `;
 
 export const MovieOverviewTitle = styled.h4`

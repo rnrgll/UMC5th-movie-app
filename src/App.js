@@ -1,26 +1,25 @@
 import Movie from "./components/Movie/Movie";
 import { movies } from "./movie.Dummy";
-import React, { useState, useEffect } from "react";
+import { AppContainer } from "./components/Movie/AppContainer.style";
+import React from "react";
+
 
 
 function App() {
   return (
-    <div>
-      <div className="app-container">
-        { //JSX 안에 자바스크립트 문법 사용할 경우 {}를 사용해야 한다.
-          movies.results.map((item) => {
-              return (
-                <Movie 
-                  title = {item.title}
-                  poster_path = {item.poster_path}
-                  vote_average = {item.vote_average}
-                  overview={item.overview}
-                />
-              );
-          })
-        }
-      </div>
-    </div> 
+      <AppContainer>
+        {movies.results.map((item) => {
+            return (
+              <Movie 
+                key={item.id} // Each child in a list should have a unique 'key' prop." 에러 해결
+                title = {item.title}
+                poster_path = {item.poster_path}
+                vote_average = {item.vote_average}
+                overview={item.overview}
+              />
+            );
+        })}
+      </AppContainer>
   );
 }
 
