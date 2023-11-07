@@ -4,6 +4,7 @@ import  * as MOS from '../MovieOverview/MovieOverview.style';
 
 const BASE_URL = "https://image.tmdb.org/t/p/w1280/";
 
+// eslint-disable-next-line react/prop-types
 function Movie({title, poster_path, vote_average, overview}) {
     const [hide, setHide] = useState(true);
 
