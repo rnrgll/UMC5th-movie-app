@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# UMC5th-movie-app
+
+UMC5th Web week3 리액트 실습
+
+<img width="1512" alt="영화 앱 구현 실습 사진" src="https://github.com/rnrgll/UMC5th-movie-app/assets/105702023/88aada98-83e9-4f80-a2af-61ecfd539754">
+<img width="1512" src="https://github.com/rnrgll/UMC5th-movie-app/assets/105702023/ca1ee76f-a3a9-439c-9430-223380f6f6b0">
+>>>>>>> fe50bd0a1ec01adce5d2cacce50a2b4726a42df9
