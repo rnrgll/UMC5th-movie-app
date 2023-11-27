@@ -6,6 +6,7 @@ import Movies from "../../movie_site/src/pages/Movies";
 import Tv from "../../movie_site/src/pages/Tv";
 import Celebrity from "../../movie_site/src/pages/Celebrity";
 import NotFound from "../../movie_site/src/pages/NotFound";
+import MovieDetail from "./pages/MovieDetail";
 
 function App() {
   return (
@@ -18,11 +19,12 @@ function App() {
           <Route path="/movie" element={<Movies />} />
           <Route path="/tv" element={<Tv />} />
           <Route path="/person" element={<Celebrity />} />
+          <Route path="/movie/:title" element={<MovieDetail />} />
+          {/* 추가된 부분 */}
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </div>
-
   );
 }
 
