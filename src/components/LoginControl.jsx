@@ -1,40 +1,29 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
-class LoginControl extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isLoggedIn: false,
-    };
-  }
+const LoginControl = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  handleLoginClick = () => {
-    this.setState({ isLoggedIn: true });
+  const handleLoginClick = () => {
+    setIsLoggedIn(true);
   };
-
-  handleLogoutClick = () => {
-    this.setState({ isLoggedIn: false });
+  const handleLogoutClick = () => {
+    setIsLoggedIn(false);
   };
-
-  render() {
-    const isLoggedIn = this.state.isLoggedIn;
-
-    return (
-      <div>
-        {isLoggedIn ? (
-          <div>
-            <button onClick={this.handleLogoutClick}>로그아웃</button>
-            <span>환영합니다!</span>
-          </div>
-        ) : (
-          <div>
-            <button onClick={this.handleLoginClick}>로그인</button>
-            <span>로그인 해주세요!</span>
-          </div>
-        )}
-      </div>
-    );
+  return (
+    <div>
+      {isLoggedIn ? (
+        <div>
+          <button onClick={handleLogoutClick}>로그아웃</button>
+          <span>환영합니다!</span>
+        </div>
+      ) : (
+        <div>
+          <button onClick={handleLoginClick}>로그인</button>
+          <span>로그인 해주세요!</span>
+        </div>
+      )}
+    </div>
+  );
   }
-}
 
 export default LoginControl;
