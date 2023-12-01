@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import LoginControl from './LoginControl';
+import LoginButton from './LoginButton';
 
 export default function Header() {
   return (
@@ -31,7 +32,7 @@ export default function Header() {
             </li>
             <li>
               <div className='header-nav-item'>
-                  <LoginControl/>
+                  <LoginButton/>
               </div>
             </li>
           </ul>

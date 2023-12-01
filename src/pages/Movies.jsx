@@ -15,6 +15,7 @@ export default function Movies() {
                   poster_path = {item.poster_path}
                   vote_average = {item.vote_average}
                   overview={item.overview}
+                  key={item.id}
                 />
               );
           })

@@ -1,0 +1,45 @@
+.login-main {
+    padding: 30px;
+}
+
+
+.login-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.login-form--section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+    width: 400px;
+}
+
+.login-label{
+    font-size: 15px;
+}
+
+.login-input {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    border-style: none;
+    border: 1px solid gray;
+    outline-color: black;
+}
+
+.login-submit {
+    width: 400px;
+    background-color: #032541;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    border-style: none;
+}
+
+.login-submit:disabled {
+    background-color: lightgray;
+}
+

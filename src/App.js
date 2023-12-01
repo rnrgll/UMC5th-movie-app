@@ -7,6 +7,7 @@ import Tv from "../../movie_site/src/pages/Tv";
 import Celebrity from "../../movie_site/src/pages/Celebrity";
 import NotFound from "../../movie_site/src/pages/NotFound";
 import MovieDetail from "./pages/MovieDetail";
+import LoginPage from "./pages/LoginPage";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/movie/:title" element={<MovieDetail />} />
           {/* 추가된 부분 */}
           <Route path="/*" element={<NotFound />} />
+          <Route path="/login" element={<LoginPage />} />
         </Routes>
       </BrowserRouter>
     </div>
