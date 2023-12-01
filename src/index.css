@@ -180,6 +180,23 @@ body {
   overflow: auto; /* 내용이 넘치는 경우 스크롤이 나타나도록 함 */
 }
 
+/*tv detail*/
+.tv__title {
+  font-size: 30px;
+}
+.tv__original_title {
+  font-size: 20px;
+}
+.tv-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.tv_original_name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
 
 /*Not Found*/
 .error-page__contaier {
