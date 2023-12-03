@@ -1,5 +1,6 @@
 @import "reset.css";
 @import "loginPage.css";
+@import "weather.css";
 
 .root-wrap {
   position: absolute;
