@@ -1,14 +1,15 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Header from "../../movie_site/src/components/Header";
-import Home from "../../movie_site/src/pages/Home";
-import Movies from "../../movie_site/src/pages/Movies";
-import Tv from "../../movie_site/src/pages/Tv";
-import Celebrity from "../../movie_site/src/pages/Celebrity";
-import NotFound from "../../movie_site/src/pages/NotFound";
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import Movies from "./pages/Movies";
+import Tv from "./pages/Tv";
+import Celebrity from "./pages/Celebrity";
+import NotFound from "./pages/NotFound";
 import MovieDetail from "./pages/MovieDetail";
 import LoginPage from "./pages/LoginPage";
 import TvDetail from "./pages/TvDetail";
+import { formToJSON } from "axios";
 
 function App() {
   return (
